@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>پیش‌فروش Sleepy Joe Coin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Sleepy Joe Coin</div>
+        <nav>
+            <a href="#rewards">پاداش‌ها</a>
+            <a href="#transactions">تراکنش‌ها</a>
+            <a href="#progress">پیشرفت فروش</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>پیش‌فروش توکن Sleepy Joe آغاز شد!</h1>
+        <p>با خرید توکن، ۵٪ پاداش دریافت کن و ۱۰٪ از خرید دعوت‌شدگان رو هدیه بگیر!</p>
+    </section>
+
+    <section id="rewards" class="content-section">
+        <h2>طرح پاداش</h2>
+        <p>به ازای هر خرید، ۵٪ توکن اضافه دریافت می‌کنی.</p>
+        <p>اگر کاربری با لینک دعوت تو خرید کنه، ۱۰٪ از مبلغ خریدش به کیف پول تو تعلق می‌گیره.</p>
+    </section>
+
+    <section id="referral" class="content-section">
+        <h2>لینک دعوت شما</h2>
+        <input type="text" id="referral-link" value="https://sleepyjoe.netlify.app?ref=your_wallet_address" readonly />
+        <button onclick="copyReferral()">کپی لینک</button>
+    </section>
+
+    <section id="progress" class="content-section">
+        <h2>پیشرفت جمع‌آوری سرمایه</h2>
+        <div id="progress-bar">
+            <div id="filled" style="width: 0%"></div>
+        </div>
+        <p id="progress-text">0 درصد تکمیل شده</p>
+    </section>
+
+    <section id="transactions" class="content-section">
+        <h2>تاریخچه تراکنش‌ها</h2>
+        <table id="transactions-table">
+            <thead>
+                <tr>
+                    <th>تاریخ</th>
+                    <th>خریدار</th>
+                    <th>دعوت‌کننده</th>
+                    <th>مقدار (BNB)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>© تمامی حقوق برای Sleepy Joe Coin محفوظ است - 2025</p>
+    </footer>
+</body>
+</html>
